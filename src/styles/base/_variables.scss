@@ -1,0 +1,122 @@
+@use "../abstracts/functions" as *;
+
+:root {
+  // Colors
+  --sk-base-color-black: 0 0 0;
+  --sk-base-color-white: 255 255 255;
+
+  --sk-base-color-gray-50: 250 250 250;
+  --sk-base-color-gray-100: 225 225 225;
+  --sk-base-color-gray-200: 200 200 200;
+  --sk-base-color-gray-300: 175 175 175;
+  --sk-base-color-gray-400: 150 150 150;
+  --sk-base-color-gray-500: 125 125 125;
+  --sk-base-color-gray-600: 100 100 100;
+  --sk-base-color-gray-700: 75 75 75;
+  --sk-base-color-gray-800: 50 50 50;
+  --sk-base-color-gray-900: 25 25 25;
+  --sk-base-color-gray-950: 15 15 15;
+
+  --sk-base-color-primary: 150 25 250;
+  --sk-base-color-secondary: 250 200 25;
+
+  --sk-base-color-info: 25 150 250;
+  --sk-base-color-error: 250 25 25;
+  --sk-base-color-warning: 250 150 25;
+  --sk-base-color-success: 25 250 100;
+
+  // Gradients
+  --sk-base-gradient-50: linear-gradient(
+    90deg,
+    rgb(var(--sk-base-color-black) / 0.5),
+    rgb(var(--sk-base-color-black) / 0)
+  );
+  --sk-base-gradient-100: linear-gradient(
+    90deg,
+    rgb(var(--sk-base-color-primary)),
+    rgb(var(--sk-base-color-secondary))
+  );
+
+  // Shadows
+  --sk-base-shadow-xs: 0 #{rem(1px)} #{rem(2px)}
+    rgb(var(--sk-base-color-black) / 0.05);
+  --sk-base-shadow-sm: 0 #{rem(1px)} #{rem(3px)}
+    rgb(var(--sk-base-color-black) / 0.1);
+  --sk-base-shadow-md: 0 #{rem(4px)} #{rem(6px)} #{rem(-1px)}
+    rgb(var(--sk-base-color-black) / 0.1);
+  --sk-base-shadow-lg: 0 #{rem(10px)} #{rem(15px)} #{rem(-3px)}
+    rgb(var(--sk-base-color-black) / 0.1);
+  --sk-base-shadow-xl: 0 #{rem(20px)} #{rem(25px)} #{rem(-5px)}
+    rgb(var(--sk-base-color-black) / 0.1);
+
+  // Typography
+  --sk-base-font-family-primary: "Segoe UI", sans-serif;
+  --sk-base-font-family-secondary: Georgia, serif;
+
+  --sk-base-font-size-xs: #{rem(12px)};
+  --sk-base-font-size-sm: #{rem(14px)};
+  --sk-base-font-size-md: #{rem(16px)};
+  --sk-base-font-size-lg: #{rem(18px)};
+  --sk-base-font-size-xl: #{rem(20px)};
+  --sk-base-font-size-2xl: #{rem(24px)};
+  --sk-base-font-size-3xl: #{rem(28px)};
+  --sk-base-font-size-4xl: #{rem(32px)};
+  --sk-base-font-size-5xl: #{rem(36px)};
+  --sk-base-font-size-6xl: #{rem(40px)};
+  --sk-base-font-size-7xl: #{rem(48px)};
+  --sk-base-font-size-8xl: #{rem(56px)};
+  --sk-base-font-size-9xl: #{rem(64px)};
+
+  --sk-base-letter-spacing-xs: -0.05em;
+  --sk-base-letter-spacing-sm: -0.025em;
+  --sk-base-letter-spacing-md: 0;
+  --sk-base-letter-spacing-lg: 0.025em;
+  --sk-base-letter-spacing-xl: 0.05em;
+
+  --sk-base-line-height-xs: 1;
+  --sk-base-line-height-sm: 1.125;
+  --sk-base-line-height-md: 1.25;
+  --sk-base-line-height-lg: 1.5;
+  --sk-base-line-height-xl: 1.75;
+
+  // Spacing
+  --sk-base-spacing-xs: #{rem(2px)};
+  --sk-base-spacing-sm: #{rem(4px)};
+  --sk-base-spacing-md: #{rem(8px)};
+  --sk-base-spacing-lg: #{rem(12px)};
+  --sk-base-spacing-xl: #{rem(16px)};
+  --sk-base-spacing-2xl: #{rem(24px)};
+  --sk-base-spacing-3xl: #{rem(32px)};
+  --sk-base-spacing-4xl: #{rem(40px)};
+  --sk-base-spacing-5xl: #{rem(48px)};
+  --sk-base-spacing-6xl: #{rem(56px)};
+  --sk-base-spacing-7xl: #{rem(64px)};
+  --sk-base-spacing-8xl: #{rem(72px)};
+  --sk-base-spacing-9xl: #{rem(80px)};
+
+  // Border Radius
+  --sk-base-radius-xs: #{rem(2px)};
+  --sk-base-radius-sm: #{rem(4px)};
+  --sk-base-radius-md: #{rem(8px)};
+  --sk-base-radius-lg: #{rem(12px)};
+  --sk-base-radius-xl: #{rem(16px)};
+  --sk-base-radius-2xl: #{rem(24px)};
+  --sk-base-radius-3xl: #{rem(32px)};
+  --sk-base-radius-4xl: #{rem(40px)};
+  --sk-base-radius-5xl: #{rem(48px)};
+  --sk-base-radius-6xl: #{rem(56px)};
+  --sk-base-radius-7xl: #{rem(64px)};
+  --sk-base-radius-8xl: #{rem(72px)};
+  --sk-base-radius-9xl: #{rem(80px)};
+  --sk-base-radius-full: 9999px;
+
+  // Z-Index
+  --sk-base-layer-sticky: 100;
+  --sk-base-layer-floating: 200;
+  --sk-base-layer-overlay: 300;
+
+  // Durations
+  --sk-base-duration-fast: 150ms;
+  --sk-base-duration-normal: 250ms;
+  --sk-base-duration-slow: 400ms;
+}
