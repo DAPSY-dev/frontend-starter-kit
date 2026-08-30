@@ -1,0 +1,18 @@
+---
+interface Props {
+  spacing?: "md";
+  size?: "md";
+}
+
+const { spacing, size } = Astro.props;
+---
+
+<div
+  class:list={[
+    "wrapper",
+    spacing && `wrapper--spacing-${spacing}`,
+    size && `wrapper--size-${size}`,
+  ]}
+>
+  <slot />
+</div>

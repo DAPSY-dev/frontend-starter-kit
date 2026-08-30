@@ -1,0 +1,20 @@
+@use "../abstracts/functions" as *;
+
+.wrapper {
+  --sk-wrapper-spacing: #{rem(16px)};
+  --sk-wrapper-size: #{rem(1280px)};
+
+  margin-inline: auto;
+  inline-size: min(
+    100% - 2 * var(--sk-wrapper-spacing),
+    var(--sk-wrapper-size)
+  );
+
+  &--spacing-md {
+    --sk-wrapper-spacing: #{rem(8px)};
+  }
+
+  &--size-md {
+    --sk-wrapper-size: #{rem(768px)};
+  }
+}
