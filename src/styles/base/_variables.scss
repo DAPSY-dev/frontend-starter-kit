@@ -94,6 +94,13 @@
   --sk-base-spacing-8xl: #{rem(72px)};
   --sk-base-spacing-9xl: #{rem(80px)};
 
+  // Containers
+  --sk-base-container-sm: #{rem(640px)};
+  --sk-base-container-md: #{rem(768px)};
+  --sk-base-container-lg: #{rem(1024px)};
+  --sk-base-container-xl: #{rem(1280px)};
+  --sk-base-container-2xl: #{rem(1536px)};
+
   // Border Radius
   --sk-base-radius-xs: #{rem(2px)};
   --sk-base-radius-sm: #{rem(4px)};

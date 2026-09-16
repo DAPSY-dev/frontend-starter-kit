@@ -1,8 +1,6 @@
-@use "../abstracts/functions" as *;
-
 .wrapper {
-  --sk-wrapper-spacing: #{rem(16px)};
-  --sk-wrapper-size: #{rem(1280px)};
+  --sk-wrapper-spacing: var(--sk-base-spacing-xl);
+  --sk-wrapper-size: var(--sk-base-container-xl);
 
   margin-inline: auto;
   inline-size: min(
@@ -11,10 +9,10 @@
   );
 
   &--spacing-md {
-    --sk-wrapper-spacing: #{rem(8px)};
+    --sk-wrapper-spacing: var(--sk-base-spacing-md);
   }
 
   &--size-md {
-    --sk-wrapper-size: #{rem(768px)};
+    --sk-wrapper-size: var(--sk-base-container-md);
   }
 }
