@@ -8,6 +8,7 @@
   "scripts": {
     "dev": "astro dev",
     "dev:host": "astro dev --host",
+    "lint": "eslint .",
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro"
@@ -16,6 +17,9 @@
     "astro": "^7.2.9"
   },
   "devDependencies": {
+    "@typescript-eslint/parser": "^8.70.1",
+    "eslint": "^10.11.0",
+    "eslint-plugin-astro": "^3.2.1",
     "sass": "^1.101.0"
   }
 }
